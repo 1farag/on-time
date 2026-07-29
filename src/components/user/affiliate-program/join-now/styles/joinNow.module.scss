@@ -1,0 +1,17 @@
+.joinNow {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.joinNow :global(.important-notes) {
+  border-radius: 16px;
+  border: 1px solid theme("colors.primary");
+  background: #fff;
+  padding: 25px;
+}
+
+.joinNow :global(.important-notes ul li) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

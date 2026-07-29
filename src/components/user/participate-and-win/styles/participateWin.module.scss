@@ -1,0 +1,772 @@
+/* Same layout / card system as Wallet (wallet.module.scss) + Virtual Wallet */
+.participatePage {
+  background: #030913;
+  min-height: calc(100vh - 100px);
+  padding: 64px 0 90px;
+
+  .header {
+    margin-bottom: 40px;
+
+    h1 {
+      color: theme("colors.primary");
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .contentLayout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .mainArea {
+    display: grid;
+    gap: 32px;
+  }
+
+  .card {
+    border-radius: 16px;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 28px;
+  }
+
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .titleWrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h3 {
+      margin: 0 0 6px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .kicker {
+    margin: 0 0 4px !important;
+    color: theme("colors.third") !important;
+    font-size: 14px !important;
+  }
+
+  .icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    background: theme("colors.primary");
+    color: theme("colors.secondary");
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .levelPill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    color: theme("colors.primary");
+    border: 1px solid #51472a;
+    background: rgba(240, 212, 132, 0.16);
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+
+  .levelDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: theme("colors.primary");
+  }
+
+  .codeActionsRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 16px;
+  }
+
+  .codeBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    // flex: 1 1 280px;
+    max-width: 409px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid theme("colors.primary");
+    background: transparent;
+  }
+
+  .codeText {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: theme("colors.primary");
+  }
+
+  .codeCopyBtn {
+    display: grid;
+    place-items: center;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(242, 222, 149, 0.2);
+    color: theme("colors.primary");
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(242, 222, 149, 0.28);
+    }
+  }
+
+  .codeCopyIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .primaryActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .btnShare {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: theme("colors.primary");
+    color: theme("colors.secondary");
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.05);
+    }
+  }
+
+  .btnOutline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid theme("colors.primary");
+    background: transparent;
+    color: theme("colors.primary");
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(242, 222, 149, 0.08);
+    }
+  }
+
+  .btnIcon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .hint {
+    margin: 0;
+    color: theme("colors.third");
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .progressBlock {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .progressLabels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .progressPct {
+    font-size: 14px;
+    font-weight: 700;
+    color: theme("colors.primary");
+  }
+
+  .progressRateLabel {
+    font-size: 13px;
+    color: theme("colors.third");
+  }
+
+  .progressTrack {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(123, 135, 157, 0.2);
+    overflow: hidden;
+  }
+
+  .progressFill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 999px;
+    background: theme("colors.primary");
+  }
+
+  .milestones {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .milestoneOpen {
+    border: 1px solid rgba(242, 222, 149, 0.4);
+    background: rgba(29, 33, 43, 0.5);
+    border-radius: 10px;
+    padding: 16px 12px;
+
+    text-align: center;
+    background: rgba(240, 212, 132, 0.1);
+    box-shadow: 0 4px 30px 0 rgba(240, 212, 132, 0.16);
+  }
+
+  .milestoneCheckWrap {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(242, 222, 149, 0.4);
+    background: theme("colors.primary");
+    color: theme("colors.secondary");
+    display: grid;
+    place-items: center;
+  }
+
+  .milestoneCheck {
+    width: 16px;
+    height: 16px;
+  }
+
+  .milestoneLocked {
+    border: 1px solid #1f2a41;
+    background: rgba(29, 33, 43, 0.5);
+    border-radius: 10px;
+    padding: 16px 12px;
+    text-align: center;
+    opacity: 0.85;
+  }
+
+  .milestoneLockIcon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    border: 1px solid #2f3a52;
+    background: rgba(29, 33, 43, 0.6);
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: theme("colors.third");
+  }
+
+  .milestoneTitle {
+    margin: 0 0 4px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .milestoneSub {
+    margin: 0;
+    color: theme("colors.third");
+    font-size: 11px;
+  }
+
+  .statsRow {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .statCard {
+    border-radius: 16px;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 20px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .statIconWrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 167, 53, 0.2);
+    background: rgba(212, 167, 53, 0.1);
+    display: grid;
+    place-items: center;
+  }
+
+  .statIcon {
+    width: 16px;
+    height: 16px;
+    color: theme("colors.primary");
+  }
+
+  .statLabel {
+    margin: 0;
+    padding-top: 6px;
+    color: theme("colors.third");
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .statLabelBold {
+    font-weight: 700;
+  }
+
+  .statValue {
+    margin: 0;
+    color: theme("colors.primary");
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .rewardGrid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .rewardTile {
+    border: 1px solid #1f2a41;
+    background: rgba(29, 33, 43, 0.5);
+    border-radius: 10px;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .rewardIconWrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    background: rgba(242, 222, 149, 0.12);
+    color: theme("colors.primary");
+  }
+
+  .rewardIconInner {
+    width: 18px;
+    height: 18px;
+  }
+
+  .rewardTileTitle {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .rewardTileDesc {
+    margin: 0;
+    color: theme("colors.third");
+    font-size: 12px;
+    line-height: 1.45;
+    flex: 1;
+  }
+
+  .rewardPill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(242, 222, 149, 0.3);
+    background: rgba(242, 222, 149, 0.08);
+    color: theme("colors.primary");
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .rewardPillIcon {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+  }
+
+  .logHeader {
+    margin-bottom: 20px;
+
+    .titleWrap {
+      align-items: flex-start;
+    }
+
+    .logHeaderText {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logTitle {
+      margin: 0 0 6px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .logSubtitle {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+  .logList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .logItem {
+    border: 1px solid #1c253a;
+    background: rgba(29, 33, 43, 0.5);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .logLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .logAvatar {
+    width: 41px;
+    height: 41px;
+    border-radius: 6px;
+    background: rgba(242, 222, 149, 0.16);
+    color: theme("colors.primary");
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+
+  .logAvatarIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .logNameBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .logName {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .logDate {
+    margin: 0;
+    color: theme("colors.third");
+    font-size: 11px;
+  }
+
+  .logRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .statusGold {
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(242, 222, 149, 0.2);
+    color: theme("colors.primary");
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .statusPending {
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid #2f3a52;
+    color: theme("colors.third");
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .logPoints {
+    margin: 0;
+    color: theme("colors.primary");
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 992px) {
+    .contentLayout {
+      grid-template-columns: 1fr;
+    }
+
+    .milestones,
+    .rewardGrid,
+    .statsRow {
+      grid-template-columns: 1fr;
+    }
+
+    .codeActionsRow {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .codeBox {
+      max-width: none;
+    }
+
+    .primaryActions {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .btnShare,
+    .btnOutline {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .logItem {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .logRight {
+      align-items: flex-start;
+    }
+  }
+
+  .redeemBtn {
+    margin-top: 8px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: theme("colors.primary");
+    color: theme("colors.secondary");
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.05);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 64px;
+
+    .header h1 {
+      font-size: 36px;
+    }
+
+    .header p {
+      font-size: 18px;
+    }
+
+    .topBar {
+      flex-direction: column;
+    }
+  }
+}
+
+.detailModalRoot {
+  :global(.ant-modal-close) {
+    color: rgba(220, 227, 242, 0.75);
+  }
+
+  :global(.ant-modal-close:hover) {
+    color: theme("colors.primary");
+  }
+}
+
+.detailModalBody {
+  padding: 28px 28px 0;
+}
+
+.redeemModalHero {
+  border-radius: 16px;
+  border: 1px solid rgba(45, 52, 67, 0.35);
+  background: rgba(29, 33, 43, 0.35);
+  padding: 28px;
+  margin-bottom: 8px;
+}
+
+.redeemModalHeroInner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.redeemIconBox {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: theme("colors.primary");
+  color: #1a1d28;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.redeemHeroTitle {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.redeemHeroSub {
+  margin: 0;
+  color: theme("colors.third");
+  font-size: 15px;
+}
+
+.detailSection {
+  margin-top: 24px;
+  padding: 20px 0 8px;
+  border-top: 1px solid #252b37;
+}
+
+.detailSectionTitle {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: theme("colors.primary");
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detailRow {
+  min-width: 0;
+}
+
+.detailLabel {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: theme("colors.third");
+  line-height: 1.3;
+}
+
+.detailValue {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #eceef4;
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.redeemHint {
+  margin: 16px 0 0;
+  color: theme("colors.third");
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.detailModalFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.viewBtn {
+  width: 180px;
+  height: 52px;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.primaryBtn {
+  width: 180px;
+  height: 52px;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+}

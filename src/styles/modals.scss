@@ -1,0 +1,265 @@
+@use "mixins" as *;
+
+.mainModal {
+  .ant-modal-content {
+    border-radius: 24px !important;
+    padding: 0;
+
+    .ant-modal-body {
+      padding-bottom: 20px;
+    }
+
+    .heading {
+      padding: 16px;
+      border-bottom: 1px solid #e2e2e2;
+
+      .user {
+        width: fit-content;
+        background-color: theme("colors.primary");
+        color: #fff;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: 64px;
+      }
+    }
+
+    .ant-modal-close {
+      display: none !important;
+    }
+  }
+}
+
+.deleteModal {
+  .ant-modal-footer {
+    display: none;
+  }
+}
+
+.confirmation-code-modal {
+  .ant-modal-content {
+    border-radius: 25px !important;
+    padding: 42px 60px !important;
+
+    @include small {
+      padding: 30px !important;
+    }
+
+    .react-code-input {
+      display: flex !important;
+      align-items: center;
+      gap: 15px;
+      input {
+        width: 40px !important;
+        height: 40px !important;
+        text-align: center;
+        padding: 0 !important;
+        font-size: 55px !important;
+      }
+    }
+
+    .ant-modal-close {
+      top: 43px;
+      right: 40px;
+      color: #5d5a88;
+
+      &:lang(ar) {
+        left: 40px;
+        top: 43px;
+
+        right: auto;
+      }
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.email-otp-modal {
+  .ant-modal-content {
+    border-radius: 16px !important;
+    border: 1px solid rgba(45, 52, 67, 0.6);
+    background: rgba(21, 28, 40, 0.9);
+    backdrop-filter: blur(12px);
+    padding: 33px;
+  }
+
+  .ant-modal-close {
+    color: #7b879d;
+  }
+}
+
+.email-otp-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h3 {
+    margin: 24px 0 0;
+    color: #f5f3f0;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 20px 0 0;
+    color: #7b879d;
+    font-size: 16px;
+    line-height: 1.4;
+
+    span {
+      color: #f5f3f0;
+      font-weight: 700;
+    }
+  }
+}
+
+.email-otp-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #f0d484;
+  color: #0a2143;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+
+.email-otp-input-wrap {
+  margin-top: 32px;
+  width: 100%;
+
+  .react-code-input {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    input {
+      width: 82px !important;
+      height: 82px !important;
+      border-radius: 12px;
+      border: 1px solid #7b879d !important;
+      background: transparent !important;
+      color: #f5f3f0 !important;
+      font-size: 32px !important;
+      text-align: center;
+      padding: 0 !important;
+      box-shadow: none !important;
+      outline: none !important;
+    }
+  }
+}
+
+.email-otp-resend-btn {
+  margin: 32px auto 0;
+  border: 0;
+  background: transparent;
+  color: #f0d484;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.email-otp-actions {
+  margin-top: 40px;
+  margin-left: auto;
+  display: flex;
+  gap: 24px;
+
+  .ant-btn {
+    height: 56px;
+    padding-inline: 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 768px) {
+  .email-otp-modal {
+    .ant-modal {
+      max-width: calc(100vw - 24px) !important;
+      margin: 0 auto;
+    }
+
+    .ant-modal-content {
+      padding: 24px;
+    }
+  }
+
+  .email-otp-modal-content {
+    h3 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .email-otp-input-wrap {
+    .react-code-input {
+      gap: 10px;
+
+      input {
+        width: 56px !important;
+        height: 56px !important;
+        font-size: 24px !important;
+      }
+    }
+  }
+
+  .email-otp-resend-btn {
+    margin-top: 24px;
+    font-size: 24px;
+  }
+
+  .email-otp-actions {
+    margin-top: 28px;
+    width: 100%;
+    gap: 12px;
+
+    .ant-btn {
+      flex: 1;
+      padding-inline: 16px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .email-otp-modal-content {
+    h3 {
+      font-size: 22px;
+    }
+  }
+
+  .email-otp-input-wrap {
+    .react-code-input {
+      gap: 8px;
+
+      input {
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 20px !important;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .email-otp-resend-btn {
+    font-size: 20px;
+  }
+}

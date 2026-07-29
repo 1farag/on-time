@@ -1,0 +1,305 @@
+.loyaltyPage {
+  background: #030913;
+  min-height: calc(100vh - 100px);
+  padding: 64px 0 90px;
+
+  .header {
+    margin-bottom: 40px;
+
+    h1 {
+      color: theme("colors.primary");
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .contentLayout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .mainArea {
+    display: grid;
+    gap: 32px;
+  }
+
+  .card {
+    border-radius: 16px;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 28px;
+  }
+
+  .titleWrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    h3 {
+      margin: 0 0 6px;
+      color: #f5f3f0;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background: theme("colors.primary");
+    color: theme("colors.secondary");
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .statusPill {
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    color: theme("colors.primary");
+    border: 1px solid #51472a;
+    background: rgba(240, 212, 132, 0.16);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .balanceRow {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    strong {
+      color: theme("colors.primary");
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    .pointsLabel {
+      margin: 6px 0 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .balanceActions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    min-width: min(100%, 414px);
+  }
+
+  .sectionIntro {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .sectionTitle {
+    margin: 0 0 6px;
+    color: #f5f3f0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .sectionSubtitle {
+    margin: 0;
+    color: theme("colors.third");
+    font-size: 16px;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 36px;
+  }
+
+  .infoTile {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 25px 13px;
+    border-radius: 12px;
+    border: 1px solid #252b37;
+    background: rgba(29, 33, 43, 0.5);
+  }
+
+  .tileIcon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background: rgba(240, 212, 132, 0.16);
+    color: theme("colors.primary");
+    font-size: 20px;
+  }
+
+  .tileTitle {
+    margin: 0 0 6px;
+    color: #f5f3f0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .tileDesc {
+    margin: 0;
+    color: theme("colors.third");
+    font-size: 12px;
+    line-height: 1.45;
+    max-width: 340px;
+  }
+
+  .whereGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .whereRow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+  }
+
+  .activityList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 8px;
+  }
+
+  .activityRow {
+    border-radius: 12px;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @apply flex-col sm:flex-row;
+  }
+
+  .activityLeft {
+    display: flex;
+    gap: 16px;
+    min-width: 0;
+    flex: 1;
+
+    @apply flex-col items-start sm:flex-row sm:items-center;
+  }
+
+  .activityIcon {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    font-size: 18px;
+  }
+
+  .activityIconEarn {
+    background: rgba(240, 212, 132, 0.16);
+    color: theme("colors.primary");
+  }
+
+  .activityIconSpend {
+    background: rgba(255, 93, 71, 0.16);
+    color: #ff5d47;
+  }
+
+  .activityTitle {
+    margin: 0 0 4px;
+    color: #f5f3f0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .activityDate {
+    margin: 0;
+    color: theme("colors.third");
+    font-size: 14px;
+  }
+
+  .activityAmount {
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .amountEarn {
+    color: theme("colors.primary");
+  }
+
+  .amountSpend {
+    color: #ff5d47;
+  }
+
+  .loadingWrap {
+    padding: 48px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 992px) {
+    .contentLayout {
+      grid-template-columns: 1fr;
+    }
+
+    .grid2,
+    .whereRow {
+      grid-template-columns: 1fr;
+    }
+
+    .balanceActions {
+      align-items: stretch;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 64px;
+
+    .header h1 {
+      font-size: 36px;
+    }
+  }
+}

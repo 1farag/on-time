@@ -1,0 +1,719 @@
+/* Figma: Booking-Platform → My Membership (548:4728) — accounting area only */
+
+.membershipFigmaPage {
+  background: #030913;
+  min-height: calc(100vh - 100px);
+  padding: 64px 0 90px;
+
+  .pageHeader {
+    margin-bottom: 40px;
+
+    h1 {
+      color: theme("colors.primary");
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .contentLayout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+
+  .mainStack {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .cardBase {
+    position: relative;
+    border-radius: 16px;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+  }
+
+  .heroCard {
+    padding: 28px;
+    min-height: 205px;
+  }
+
+  .heroInner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .heroTop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 36px;
+  }
+
+  .heroBrand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .heroIcon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    background: theme("colors.primary");
+    color: #0a2143;
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+
+  .heroKicker {
+    margin: 0 0 4px;
+    font-size: 12px;
+    line-height: 16px;
+    color: theme("colors.third");
+    font-weight: 400;
+  }
+
+  .heroTitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    background: theme("colors.primary");
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .vipPill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 17px;
+    border-radius: 999px;
+    border: 1px solid rgba(212, 167, 53, 0.3);
+    background: rgba(212, 167, 53, 0.15);
+    font-size: 12px;
+    font-weight: 700;
+    color: theme("colors.primary");
+  }
+
+  .vipDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: theme("colors.primary");
+  }
+
+  .statGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 36px;
+    width: 100%;
+  }
+
+  .statBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .statLabel {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    line-height: 16.5px;
+    color: theme("colors.third");
+  }
+
+  .statValue {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #f5f3f0;
+  }
+
+  .sectionCard {
+    padding: 28px;
+    box-shadow: 0 8px 20px rgba(8, 16, 33, 0.5);
+  }
+
+  .sectionHead {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding-bottom: 25px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #252b37;
+  }
+
+  .sectionHeadIcon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    background: rgba(212, 167, 53, 0.1);
+    border: 1px solid rgba(212, 167, 53, 0.2);
+    color: theme("colors.primary");
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    margin: 0 0 4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #f5f3f0;
+  }
+
+  .sectionSubtitle {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: theme("colors.third");
+  }
+
+  .benefitsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 36px;
+  }
+
+  .benefitsCol {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1 1 280px;
+    min-width: 0;
+  }
+
+  .benefitTile {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 17px;
+    border-radius: 12px;
+    border: 1px solid #252b37;
+    background: rgba(29, 33, 43, 0.2);
+  }
+
+  .benefitIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(212, 167, 53, 0.15);
+    border: 1px solid rgba(212, 167, 53, 0.3);
+    color: theme("colors.primary");
+    font-size: 14px;
+  }
+
+  .benefitTitle {
+    margin: 0 0 3px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #f5f3f0;
+  }
+
+  .benefitDesc {
+    margin: 0;
+    font-size: 12px;
+    line-height: 19.5px;
+    color: theme("colors.third");
+  }
+
+  .mgmtCard {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+    box-shadow: 0 8px 20px rgba(8, 16, 33, 0.5);
+  }
+
+  .mgmtActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .mgmtTile {
+    flex: 1 1 200px;
+    min-width: 0;
+    padding: 21px 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+    cursor: default;
+    text-align: left;
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    &:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+  }
+
+  a.mgmtTile {
+    cursor: pointer;
+    transition:
+      border-color 0.2s,
+      opacity 0.2s;
+
+    &:hover {
+      border-color: rgba(212, 167, 53, 0.35);
+    }
+  }
+
+  .mgmtTileIcon {
+    font-size: 20px;
+    color: #f5f3f0;
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .mgmtTileTitle {
+    display: block;
+    margin: 8px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #f5f3f0;
+  }
+
+  .mgmtTileDesc {
+    display: block;
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: theme("colors.third");
+  }
+
+  .mgmtTileDanger .mgmtTileIcon {
+    color: #ff5d47;
+  }
+
+  .saveRow {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .upgradeOptionsSection {
+    padding-bottom: 8px;
+  }
+
+  .membershipsSection {
+    padding-bottom: 20px;
+  }
+
+  .membershipsHead {
+    margin-bottom: 18px;
+  }
+
+  .membershipCardHost {
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid theme("colors.primary");
+      outline-offset: 4px;
+    }
+  }
+
+  .membershipCardCurrent {
+    box-shadow: 0 0 0 3px theme("colors.primary");
+  }
+
+  .membershipCardCurrent :global(.ant-btn-default) {
+    border-color: theme("colors.primary");
+    color: theme("colors.primary");
+    background: rgba(212, 167, 53, 0.08);
+  }
+
+  .membershipCardHost :global(.ant-btn-default:hover) {
+    border-color: theme("colors.primary") !important;
+    color: theme("colors.primary") !important;
+  }
+
+  .upgradeSectionHead {
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+  }
+
+  .upgradeOptionsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .upgradeOptionShell {
+    position: relative;
+    min-width: 0;
+    padding-top: 12px;
+  }
+
+  .bestValueBadge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #0a2143;
+    background: theme("colors.primary");
+    border: 1px solid rgba(212, 167, 53, 0.5);
+    white-space: nowrap;
+  }
+
+  .upgradeOptionCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    padding: 24px;
+    padding-top: 30px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition:
+      border-color 0.2s,
+      background 0.2s;
+
+    &:focus-visible {
+      outline: 2px solid theme("colors.primary");
+      outline-offset: 4px;
+    }
+  }
+
+  .upgradeOptionIdle {
+    border: 1px solid rgba(45, 52, 67, 0.55);
+    background: rgba(18, 22, 31, 0.75);
+  }
+
+  .upgradeOptionSelected {
+    border: 1px solid theme("colors.primary");
+    background: rgba(212, 167, 53, 0.06);
+    box-shadow: 0 0 0 1px rgba(212, 167, 53, 0.18);
+  }
+
+  .upgradeOptionHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .upgradeOptionIconSq {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(212, 167, 53, 0.1);
+    border: 1px solid rgba(212, 167, 53, 0.22);
+    color: theme("colors.primary");
+  }
+
+  .upgradeOptionTitle {
+    flex: 1;
+    margin: 0;
+    padding-top: 2px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #f5f3f0;
+    min-width: 0;
+  }
+
+  .radioOuter {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid rgba(180, 186, 201, 0.45);
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+
+    &.radioOn {
+      border-color: theme("colors.primary");
+
+      &::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: theme("colors.primary");
+      }
+    }
+  }
+
+  .upgradeOptionDesc {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: theme("colors.third");
+    padding-right: 8px;
+  }
+
+  .upgradeDl {
+    margin: 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .upgradeDlRow {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 13px;
+    line-height: 18px;
+
+    dt {
+      margin: 0;
+      color: theme("colors.third");
+      font-weight: 500;
+    }
+
+    dd {
+      margin: 0;
+      font-weight: 700;
+      color: #f5f3f0;
+      text-align: right;
+
+      &.ddCredit {
+        font-weight: 800;
+        color: #34d399;
+      }
+
+      &.ddGold {
+        font-weight: 800;
+        color: theme("colors.primary");
+      }
+    }
+  }
+
+  .upgradeTotalBar {
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid #252b37;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 15px;
+    color: #f5f3f0;
+  }
+
+  .upgradeTotalAmount {
+    font-size: 16px;
+    color: theme("colors.primary");
+  }
+
+  .upgradeFooterActions {
+    margin-top: 36px;
+    margin-bottom: 12px;
+    padding-top: 28px;
+    border-top: 1px solid #252b37;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-end;
+  }
+
+  .upgradeOutlineBtn {
+    background: transparent;
+    border: 2px solid theme("colors.primary");
+    color: theme("colors.primary");
+
+    &:hover {
+      opacity: 0.9;
+      background: rgba(212, 167, 53, 0.08);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .contentLayout {
+      grid-template-columns: 1fr;
+    }
+
+    .statGrid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .upgradeOptionsGrid {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 64px;
+
+    .pageHeader h1 {
+      font-size: 36px;
+    }
+
+    .statGrid {
+      grid-template-columns: 1fr;
+    }
+
+    .benefitsGrid {
+      flex-direction: column;
+    }
+
+  }
+}
+
+.cancelModalRoot {
+  :global(.ant-modal-close) {
+    color: rgba(220, 227, 242, 0.75);
+  }
+
+  :global(.ant-modal-close:hover) {
+    color: theme("colors.primary");
+  }
+}
+
+.cancelModalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cancelModalCopy {
+  h3 {
+    margin: 0 0 12px;
+    color: #f5f3f0;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+    color: #7b879d;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.cancelLossCard {
+  border: 1px solid rgba(123, 135, 157, 0.8);
+  border-radius: 12px;
+  padding: 24px;
+  background: rgba(13, 19, 31, 0.75);
+}
+
+.cancelMembershipRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  h4 {
+    margin: 0;
+    color: #f5f3f0;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+}
+
+.cancelMembershipIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: theme("colors.primary");
+  color: #0a2143;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.cancelMembershipLabel {
+  margin: 0 0 4px;
+  color: #7b879d;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.cancelLossTitle {
+  margin: 0 0 18px;
+  color: #7b879d;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.cancelLossList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #f5f3f0;
+    font-size: 18px;
+    line-height: 1.35;
+
+    svg {
+      color: theme("colors.primary");
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+  }
+}

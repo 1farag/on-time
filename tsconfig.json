@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/hooks/useAos.js",
+    "src/components/insights/sections/BrowseMoreArticlesSection.jsx",
+    "src/components/insights/sections/FeaturedArticlesSection.jsx",
+    "src/components/insights/sections/InsightsHeroSection.jsx",
+    "src/components/insights/InsightsComponent.jsx",
+    "src/components/tools/links/LocalizedLink.jsx",
+    ".next/dev/types/**/*.ts",
+    "src/components/admin/users/userProfile/AdminUserProfileComponent.jsx",
+    "src/components/admin/daschboard/sections/SalesDashboard_section.jsx",
+    "src/components/user/my-membership/sections/AllMembershipDetails_section.jsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

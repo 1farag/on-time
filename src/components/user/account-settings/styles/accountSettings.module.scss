@@ -1,0 +1,123 @@
+.accountSettings {
+  background: #030913;
+  min-height: calc(100vh - 100px);
+  padding: 64px 0 90px;
+
+  .header {
+    margin-bottom: 40px;
+
+    h1 {
+      color: theme("colors.primary");
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .contentLayout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .formsArea {
+    display: grid;
+    gap: 32px;
+  }
+
+  .formCard {
+    border-radius: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 32px;
+  }
+
+  .sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h3 {
+      margin: 0 0 2px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: #667391;
+      font-size: 12px;
+    }
+  }
+
+  .iconWrap {
+    width: 42px;
+    height: 42px;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    background: theme("colors.primary");
+    color: theme("colors.secondary");
+    font-size: 20px;
+  }
+
+  .separator {
+    height: 1px;
+    background: #1f2a41;
+    margin: 20px 0;
+  }
+
+  .gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .gridOne {
+    display: grid;
+    gap: 14px;
+  }
+
+  :global(.ant-form-item) {
+    margin-bottom: 0;
+  }
+
+  .actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  @media (max-width: 992px) {
+    .contentLayout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 64px;
+
+    .header h1 {
+      font-size: 36px;
+    }
+
+    .header p {
+      font-size: 18px;
+    }
+
+    .gridTwo {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+

@@ -1,0 +1,92 @@
+.singlePricePlan {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.singlePricePlan :global(.single-plan-details .single-plan) {
+  border-radius: 16px;
+  border: 1px solid var(--Gray-50, #f1f1f1);
+  background: #fff;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+}
+
+.singlePricePlan :global(.single-plan-details .single-plan .top) {
+  background: theme("colors.primary");
+}
+
+.singlePricePlan :global(.single-plan-details .single-plan .icon) {
+  width: 80px;
+  height: 80px;
+  border-radius: 33554400px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.singlePricePlan :global(.single-plan-details .additional-benefits) {
+  border-radius: 16px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 33px;
+  margin-bottom: 32px;
+}
+
+.singlePricePlan :global(.single-plan-details .points-system) {
+  border-radius: 16px;
+  background: theme("colors.primary");
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  color: white;
+}
+
+.singlePricePlan :global(.order-plan-summary .summary-card) {
+  border-radius: 16px;
+  border: 1px solid #f3f4f6;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.singlePricePlan :global(.order-plan-summary .summary-card .reward) {
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 16px;
+}
+
+.singlePricePlan :global(.order-plan-summary .features) {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.singlePricePlan :global(.order-plan-summary .features li) {
+  flex: 1;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-50, #f1f1f1);
+  background: #fff;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  gap: 5px;
+}

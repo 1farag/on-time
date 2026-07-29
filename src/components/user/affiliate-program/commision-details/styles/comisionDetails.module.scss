@@ -1,0 +1,50 @@
+.comisionDetails {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.comisionDetails :global(.cardS1) {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.comisionDetails :global(.cardS1 .icon) {
+  border-radius: 12px;
+  background: #eaf6f2;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+}
+
+.comisionDetails :global(.cardS1 .icon.primary) {
+  background: theme("colors.primary");
+}
+
+.comisionDetails :global(.cardS1 .icon.secondary) {
+  background: theme("colors.primary");
+}
+
+.comisionDetails :global(.convert-percentage) {
+  border-radius: 24px;
+  background: theme("colors.primary");
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 32px;
+}
+
+.comisionDetails :global(.important-notes) {
+  border-radius: 16px;
+  border: 1px solid theme("colors.primary");
+  background: #fff;
+  padding: 25px;
+}
+
+.comisionDetails :global(.important-notes ul li) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

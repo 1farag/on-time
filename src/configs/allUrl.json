@@ -1,0 +1,5 @@
+{
+  "apiUrl": "https://api.richstyle.net/api",
+  "testaUrl": "https://api.richstyle.net/api",
+  "UnAuthorizationRedirectUrl": "/"
+}

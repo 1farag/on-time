@@ -1,0 +1,142 @@
+.membershipPage {
+  background: #030913;
+  min-height: calc(100vh - 100px);
+  padding: 64px 0 90px;
+
+  .header {
+    margin-bottom: 40px;
+
+    h1 {
+      color: theme("colors.primary");
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .contentLayout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .mainArea {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .loadingWrap {
+    padding: 64px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+  }
+
+  .bannerWrap {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+
+    @media (min-width: 768px) {
+      height: 350px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .contentLayout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 64px;
+
+    .header h1 {
+      font-size: 36px;
+    }
+  }
+}
+
+.embedded {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+:global(.single-plan) {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+  overflow: hidden;
+
+  &.single-plan-silver {
+    :global(.top) {
+      background: linear-gradient(180deg, #b0b0b3 0%, #9a9a9d 100%);
+    }
+  }
+
+  &.single-plan-golden {
+    :global(.top) {
+      background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 100%);
+    }
+  }
+
+  &.single-plan-diamond {
+    :global(.top) {
+      background: #4ba246;
+    }
+  }
+
+  &.single-plan-al_tai_membership,
+  &.single-plan-al_hatimi_membership,
+  &.single-plan-basic_membership,
+  &.single-plan-grey_membership {
+    :global(.top) {
+      background: linear-gradient(135deg, #1e3a5f 0%, #c9a227 55%, #8b6914 100%);
+    }
+  }
+
+  :global(.icon) {
+    width: 80px;
+    height: 80px;
+    border-radius: 33554400px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+}
+
+:global(.fast-actions) {
+  :global(.upgrade-card) {
+    border-radius: 16px;
+    background: theme("colors.primary");
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    color: white;
+  }
+}

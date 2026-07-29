@@ -1,0 +1,83 @@
+.login {
+  background-image: url("/images/login-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @apply px-6 md:px-0;
+
+  .title {
+    color: theme("colors.primary");
+    font-size: 48px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .subtitle {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer {
+    color: #7f8799;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 28px;
+  }
+
+  :global(.login-card) {
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    padding: 32px;
+    width: 100%;
+    max-width: 448px;
+
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+  }
+
+  :global(.login-card .ant-form-item-label > label) {
+    color: #aab2c4 !important;
+    font-size: 14px;
+  }
+
+  :global(.login-card .ant-input),
+  :global(.login-card .ant-input-affix-wrapper),
+  :global(.inputS1 .react-tel-input input) {
+    border-radius: 12px;
+    border: 1px solid #252b37 !important;
+    background: rgba(29, 33, 43, 0.5) !important;
+    color: #d9deea !important;
+  }
+
+  :global(.login-card .ant-input-password .ant-input) {
+    border: none !important;
+    background: transparent !important;
+  }
+
+  :global(.login-card .ant-input::placeholder) {
+    color: #7f899f !important;
+  }
+
+  :global(.login-card .ant-input-password-icon) {
+    color: #8f98ac !important;
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 42px;
+    }
+
+    :global(.login-card) {
+      padding: 28px 22px 24px;
+    }
+  }
+}

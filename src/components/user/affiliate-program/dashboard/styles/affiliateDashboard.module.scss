@@ -1,0 +1,30 @@
+.affiliateDashboard {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.affiliateDashboard :global(.cardS1) {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.affiliateDashboard :global(.cardS1 .icon) {
+  border-radius: 12px;
+  background: theme("colors.primary");
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+}
+
+.affiliateDashboard :global(.cardS1 .icon.primary) {
+  background: theme("colors.primary");
+}
+
+.affiliateDashboard :global(.cardS1 .icon.secondary) {
+  background: theme("colors.primary");
+}

@@ -1,0 +1,121 @@
+@import "antd/dist/reset.css"; // Ensure Ant Design resets are applied
+
+// Inputs
+.ant-input-number {
+  width: 100% !important;
+}
+
+// Buttons
+
+.ant-btn {
+  border-radius: 999px !important;
+  @apply py-5 px-8;
+  padding: 20px 32px !important;
+  font-size: 18px;
+  height: auto !important;
+  min-width: 100px;
+  font-weight: 500 !important;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(180deg, #a67f44 0%, #715027 100%) !important;
+  color: #fff !important;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    color: #fff !important;
+    background: linear-gradient(180deg, #a67f44 0%, #715027 100%) !important;
+  }
+}
+
+.ant-btn-default {
+  color: #fff !important; // Change primary color
+  border-color: #8c6a2d !important;
+  background: transparent !important;
+}
+
+.ant-btn-text {
+  color: #fff !important; // Change primary color
+  border-color: transparent !important;
+  border: 1px solid #fff !important;
+}
+
+// Dragers
+.ant-upload-wrapper {
+  .ant-upload-drag {
+    background: #fff !important;
+    border: 1px solid #e5e7eb !important;
+  }
+}
+
+.ant-switch {
+  // height: 35px !important;
+  // min-width: 80px !important; // optional: adjust for content
+
+  .ant-switch-handle {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+
+  .ant-switch-inner {
+    height: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+
+  &.ant-switch-checked {
+    background-color: theme("colors.primary") !important;
+    border-color: theme("colors.primary") !important;
+
+    .ant-switch-inner span {
+      color: #fff !important;
+    }
+
+    .ant-switch-handle::before {
+      background-color: #fff !important;
+    }
+  }
+}
+
+.ant-form-item-required {
+  &::before {
+    content: "*" !important;
+    color: theme("colors.third") !important;
+    margin-right: 4px !important;
+  }
+}
+
+.ant-form-item-explain-error {
+  color: theme("colors.third") !important;
+}
+
+.ant-select-outlined.ant-select-status-error {
+  .ant-select-selector {
+    border-color: theme("colors.third") !important;
+  }
+}
+
+// STEPS RESET
+.ant-steps-item-title {
+  &::after {
+    display: none !important;
+  }
+}
+
+// Dropdown arrow
+.ant-dropdown .ant-dropdown-arrow {
+  &::before {
+    background: theme("colors.primary") !important;
+    // border: 1px solid theme("colors.primary") !important;
+  }
+}
+
+.formS1 .ant-input-password .ant-input {
+  border: none !important;
+  background: transparent !important;
+}

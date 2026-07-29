@@ -1,0 +1,544 @@
+/* Same layout / card system as Wallet + Account Settings (Figma Virtual Wallet 422:7643) */
+.virtualWalletPage {
+  background: #030913;
+  min-height: calc(100vh - 100px);
+  padding: 64px 0 90px;
+
+  .header {
+    margin-bottom: 40px;
+
+    h1 {
+      color: theme("colors.primary");
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .contentLayout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .mainArea {
+    display: grid;
+    gap: 32px;
+  }
+
+  .card {
+    border-radius: 16px;
+    border: 1px solid rgba(45, 52, 67, 0.4);
+    background: rgba(21, 28, 40, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 28px;
+  }
+
+  .titleWrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h3 {
+      margin: 0 0 6px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 16px;
+    }
+  }
+
+  .kicker {
+    margin: 0 0 4px !important;
+    color: theme("colors.third") !important;
+    font-size: 14px !important;
+  }
+
+  .icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    background: theme("colors.primary");
+    color: theme("colors.secondary");
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .usablePill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    color: theme("colors.primary");
+    border: 1px solid #51472a;
+    background: rgba(240, 212, 132, 0.16);
+    padding: 8px 12px;
+  }
+
+  .usableDot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: theme("colors.primary");
+  }
+
+  .balanceBlock {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .seatValue {
+    display: block;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .balanceSub {
+    margin: 8px 0 0;
+    color: theme("colors.third");
+    font-size: 16px;
+  }
+
+  .actionRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .sourcesGrid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .sourceCard {
+    border: 1px solid #1f2a41;
+    background: rgba(29, 33, 43, 0.5);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .sourceIcon {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: rgba(242, 222, 149, 0.12);
+      color: theme("colors.primary");
+      font-size: 18px;
+    }
+
+    h4 {
+      margin: 10px 0 6px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  }
+
+  .guidelinesList {
+    margin: 40px 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: theme("colors.third");
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .bullet {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: theme("colors.primary");
+    margin-top: 6px;
+  }
+
+  .logsList {
+    margin-top: 40px;
+  }
+
+  .logItem {
+    border: 1px solid #1c253a;
+    background: rgba(29, 33, 43, 0.5);
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .logLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+
+    h5 {
+      margin: 0 0 4px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      color: theme("colors.third");
+      font-size: 12px;
+    }
+  }
+
+  .logIcon {
+    width: 41px;
+    height: 41px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .logIconIn {
+    background: rgba(242, 222, 149, 0.16);
+    color: theme("colors.primary");
+  }
+
+  .logIconOut {
+    background: rgba(241, 111, 98, 0.2);
+    color: #f16f62;
+  }
+
+  .logAmountPositive {
+    color: theme("colors.primary");
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .logAmountNegative {
+    color: #d5d9e4;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  :global(.ant-btn-default) {
+    min-width: 92px;
+    border-color: theme("colors.primary") !important;
+    color: theme("colors.primary") !important;
+    background: transparent !important;
+    border-radius: 10px;
+    font-weight: 700;
+    height: 44px;
+  }
+
+  :global(.ant-btn-default:hover) {
+    background: rgba(242, 222, 149, 0.08) !important;
+  }
+
+  :global(.ant-btn-primary) {
+    min-width: 132px;
+    border-radius: 10px;
+    font-weight: 700;
+    height: 44px;
+  }
+
+  @media (max-width: 992px) {
+    .contentLayout {
+      grid-template-columns: 1fr;
+    }
+
+    .sourcesGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 64px;
+
+    .header h1 {
+      font-size: 36px;
+    }
+
+    .header p {
+      font-size: 18px;
+    }
+
+    .balanceBlock {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .actionRow {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    :global(.ant-btn-primary),
+    :global(.ant-btn-default) {
+      width: 100%;
+    }
+  }
+}
+
+/* Modal styling to match My Booking "View Details" */
+.detailModalRoot {
+  :global(.ant-modal-close) {
+    color: rgba(220, 227, 242, 0.75);
+  }
+
+  :global(.ant-modal-close:hover) {
+    color: theme("colors.primary");
+  }
+}
+
+.detailModalBody {
+  padding: 28px 28px 0;
+}
+
+.bookingCard {
+  border-radius: 16px;
+  border: 1px solid rgba(45, 52, 67, 0.4);
+  background: rgba(21, 28, 40, 0.6);
+  backdrop-filter: blur(12px);
+  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  height: fit-content;
+}
+
+.bookingInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  @apply flex-col items-start sm:flex-row sm:items-center;
+
+  p {
+    margin: 0;
+    color: theme("colors.third");
+    font-size: 15px;
+  }
+}
+
+.iconBox {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: theme("colors.primary");
+  color: #1a1d28;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.routeRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+
+  h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.statusTag {
+  border: none !important;
+  border-radius: 999px;
+  background: rgba(242, 222, 149, 0.3) !important;
+  color: theme("colors.primary") !important;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px !important;
+  margin-inline-end: 0 !important;
+}
+
+.bookingActions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  @apply flex-col items-start sm:flex-row sm:items-center;
+
+  strong {
+    color: theme("colors.primary");
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+}
+
+.viewBtn {
+  width: 180px;
+  height: 52px;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  @apply w-full sm:w-fit;
+}
+
+.viewBtn:hover {
+  background: rgba(242, 222, 149, 0.08) !important;
+  color: theme("colors.primary") !important;
+  border-color: theme("colors.primary") !important;
+}
+
+.primaryBtn {
+  width: 180px;
+  height: 52px;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  @apply w-full sm:w-fit;
+}
+
+.detailModalFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.detailModalHero {
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 8px;
+  border: 1px solid rgba(45, 52, 67, 0.35);
+  background: rgba(29, 33, 43, 0.35);
+}
+
+.detailModalPrice {
+  padding-top: 16px;
+  margin-top: 8px;
+  border-top: 1px solid rgba(45, 52, 67, 0.45);
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.detailSection {
+  margin-top: 24px;
+  padding: 20px 0 8px;
+  border-top: 1px solid #252b37;
+}
+
+.detailSectionTitle {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: theme("colors.primary");
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detailRow {
+  min-width: 0;
+
+  .detailLabel {
+    margin: 0 0 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: theme("colors.third");
+    line-height: 1.3;
+  }
+
+  .detailValue {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #eceef4;
+    line-height: 1.45;
+    word-break: break-word;
+  }
+}
+
+.inlineFormItem {
+  margin: 0 !important;
+}
+
+.inputS1 {
+  width: 100%;
+}
+
+.quoteLoading {
+  margin-top: 12px;
+  color: theme("colors.third");
+  font-size: 12px;
+}

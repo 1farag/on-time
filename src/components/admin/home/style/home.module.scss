@@ -1,0 +1,27 @@
+.dashboard {
+  :global(.card) {
+    background-image: linear-gradient(
+      230deg,
+      #122140 40.21%,
+      rgba(18, 33, 64, 0.14) 102.63%
+    );
+    filter: drop-shadow(0px 3.082px 25.428px rgba(0, 0, 0, 0.25));
+
+    &:hover {
+      background-image: linear-gradient(221deg, #f3dbb4 32.41%, #fff 76.74%);
+      transition: all 0.3s ease-in-out;
+
+      h4 {
+        color: theme("colors.primary") !important;
+        transition: all 0.3s ease-in-out;
+      }
+
+      p {
+        background: theme("colors.primary") !important;
+        transition: all 0.3s ease-in-out;
+        color: theme("colors.white") !important;
+      }
+    }
+  }
+}
+

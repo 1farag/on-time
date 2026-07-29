@@ -1,0 +1,25 @@
+@use "../../../styles/mixins" as *;
+
+.homePage {
+  :global(.hero-section) {
+    position: relative;
+
+    :global(.hero-bullet) {
+      width: 10px;
+      height: 10px;
+      background-color: #d1d5db;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    :global(.hero-bullet-active) {
+      width: 32px;
+      height: 10px;
+      background-color: theme("colors.secondary");
+      border-radius: 9999px;
+    }
+  }
+}
+

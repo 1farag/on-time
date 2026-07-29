@@ -1,0 +1,351 @@
+.detailModalRoot {
+  :global(.ant-modal-close) {
+    color: rgba(220, 227, 242, 0.75);
+  }
+
+  :global(.ant-modal-close:hover) {
+    color: theme("colors.primary");
+  }
+}
+
+/* Booking card — root so it applies in list and in portaled Modal */
+.bookingCard {
+  border-radius: 16px;
+  border: 1px solid rgba(45, 52, 67, 0.4);
+  background: rgba(21, 28, 40, 0.6);
+  backdrop-filter: blur(12px);
+  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  height: fit-content;
+}
+
+.bookingInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  @apply flex-col items-start sm:flex-row sm:items-center;
+}
+
+.iconBox {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: theme("colors.primary");
+  color: #1a1d28;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.routeRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+
+  h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  span {
+    color: #dce3f2;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.statusTag {
+  border: none !important;
+  border-radius: 999px;
+  background: rgba(242, 222, 149, 0.3) !important;
+  color: theme("colors.primary") !important;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px !important;
+  margin-inline-end: 0 !important;
+}
+
+.bookingInfo p {
+  margin: 0;
+  color: theme("colors.third");
+  font-size: 15px;
+}
+
+.bookingActions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+
+  @apply flex-col items-start sm:flex-row sm:items-center;
+
+  strong {
+    color: theme("colors.primary");
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+}
+
+.viewBtn {
+  width: 180px;
+  height: 52px;
+
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+
+  @apply w-full sm:w-fit;
+}
+
+.viewBtn:hover {
+  background: rgba(242, 222, 149, 0.08) !important;
+  color: theme("colors.primary") !important;
+  border-color: theme("colors.primary") !important;
+}
+
+/* Modal body — root (Modal is portaled outside .myBooking) */
+.detailModalBody {
+  padding: 28px 28px 0;
+}
+
+.detailModalHero {
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 8px;
+  border: 1px solid rgba(45, 52, 67, 0.35);
+  background: rgba(29, 33, 43, 0.35);
+}
+
+.detailModalPrice {
+  padding-top: 16px;
+  margin-top: 8px;
+  border-top: 1px solid rgba(45, 52, 67, 0.45);
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.detailSection {
+  margin-top: 24px;
+  padding: 20px 0 8px;
+  border-top: 1px solid #252b37;
+}
+
+.detailSectionTitle {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: theme("colors.primary");
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detailRow {
+  min-width: 0;
+
+  dt {
+    margin: 0 0 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: theme("colors.third");
+    line-height: 1.3;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #eceef4;
+    line-height: 1.45;
+    word-break: break-word;
+  }
+}
+
+.detailMono {
+  font-family: ui-monospace, monospace;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  word-break: break-all;
+  color: theme("colors.third") !important;
+}
+
+.detailModalFooter {
+  display: flex;
+  justify-content: flex-end;
+
+  .viewBtn {
+    margin: 0;
+  }
+}
+
+.myBooking {
+  background: #030913;
+  min-height: calc(100vh - 100px);
+  padding: 64px 0 90px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 42px;
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      color: theme("colors.primary");
+      font-weight: 700;
+    }
+
+    p {
+      color: theme("colors.third");
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+
+  .statusSelect {
+    width: 176px;
+
+    :global(.ant-select-selector) {
+      background: transparent !important;
+      border-color: transparent !important;
+      color: theme("colors.primary") !important;
+      font-weight: 700;
+      box-shadow: none !important;
+    }
+
+    :global(.ant-select-arrow) {
+      color: theme("colors.primary") !important;
+    }
+  }
+
+  .contentLayout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .listArea {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 48px 28px 56px;
+    border-radius: 16px;
+    border: 1px solid rgba(45, 52, 67, 0.45);
+    background: rgba(21, 28, 40, 0.55);
+    backdrop-filter: blur(12px);
+    margin: 12px auto 0;
+  }
+
+  .emptyStateIcon {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    background: rgba(242, 222, 149, 0.12);
+    color: theme("colors.primary");
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+  }
+
+  .emptyStateTitle {
+    margin: 0 0 12px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+  }
+
+  .emptyStateText {
+    margin: 0 0 28px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: theme("colors.third");
+    max-width: 400px;
+  }
+
+  .emptyStateCta {
+    display: inline-flex;
+    text-decoration: none;
+  }
+
+  .emptyStateBtn {
+    min-width: 200px;
+    height: 48px !important;
+    font-weight: 600 !important;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 64px;
+
+    .header h1 {
+      font-size: 36px;
+    }
+
+    .header p {
+      font-size: 18px;
+    }
+
+    .contentLayout {
+      grid-template-columns: 1fr;
+    }
+
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bookingCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .routeRow h3 {
+    font-size: 22px;
+  }
+
+  .bookingInfo p {
+    font-size: 13px;
+  }
+
+  .bookingActions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .bookingActions strong {
+    font-size: 28px;
+  }
+}

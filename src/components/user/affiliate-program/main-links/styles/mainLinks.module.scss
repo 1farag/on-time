@@ -1,0 +1,24 @@
+.mainLinks {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.mainLinks :global(.main-link) {
+  border-radius: 16px;
+  background: theme("colors.primary");
+  box-shadow: 0 27.083px 54.167px -13px rgba(0, 0, 0, 0.25);
+  padding: 34px;
+}
+
+.mainLinks :global(.important-notes) {
+  border-radius: 16px;
+  border: 1px solid theme("colors.primary");
+  background: #fff;
+  padding: 25px;
+}
+
+.mainLinks :global(.important-notes ul li) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
