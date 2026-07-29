@@ -11,7 +11,7 @@ export const MembershipComponent = () => {
           </h1>
           <p className="text-third text-lg">
             Unlock exclusive privileges, priority access, dedicated concierge
-            support, <br /> and unique luxury experiences through Rich Style
+            support, <br /> and unique luxury experiences through On Time
             Memberships.
           </p>
         </div>

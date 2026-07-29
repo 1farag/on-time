@@ -52,7 +52,7 @@ export function MembershipPaymentFailedComponent() {
             </div>
             <div className="text-start">
               <p className="mb-2 flex flex-wrap items-center gap-2 text-lg text-white">
-                <span>Rich Style </span>
+                <span>On Time </span>
                 <GoArrowRight className="text-xl text-primary" />
                 <span>Membership</span>
               </p>

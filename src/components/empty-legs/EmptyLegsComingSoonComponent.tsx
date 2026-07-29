@@ -92,7 +92,7 @@ export const EmptyLegsComingSoonComponent = () => {
         </div>
 
         <p className="mt-8 text-center text-sm" style={{ color: "#5c6678" }}>
-          Rich Style · Premium travel, refined.
+          On Time · Premium travel, refined.
         </p>
       </div>
     </main>

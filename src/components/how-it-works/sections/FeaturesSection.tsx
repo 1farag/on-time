@@ -14,9 +14,9 @@ type FeatureItem = {
 const features: FeatureItem[] = [
   {
     number: "01",
-    title: "Why Rich Style  ",
+    title: "Why On Time  ",
     description:
-      "Rich Style  is not just a booking service. It is a private aviation partner for clients who want guidance, clarity, and premium execution. We combine aviation coordination, client advisory, and regional understanding to provide a smarter way to fly private. ",
+      "On Time  is not just a booking service. It is a private aviation partner for clients who want guidance, clarity, and premium execution. We combine aviation coordination, client advisory, and regional understanding to provide a smarter way to fly private. ",
     // bullets: [
     //   "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     //   "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -28,9 +28,9 @@ const features: FeatureItem[] = [
   },
   {
     number: "02",
-    title: "Experience Private Aviation with Rich Style  ",
+    title: "Experience Private Aviation with On Time  ",
     description:
-      "Whether you are planning a business trip, family journey, VIP movement, or corporate travel program, Rich Style  is ready to support your next flight. ",
+      "Whether you are planning a business trip, family journey, VIP movement, or corporate travel program, On Time  is ready to support your next flight. ",
     // bullets: [
     //   "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     //   "Lorem Ipsum is simply dummy text of the printing and typesetting industry",

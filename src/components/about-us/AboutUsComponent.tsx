@@ -47,7 +47,7 @@ export const AboutUsComponent = () => {
             </h1>
 
             <p className="text-third text-lg">
-              Rich Style Part Of{" "}
+              On Time Part Of{" "}
               <a
                 href="https://www.on-time.group/"
                 target="_blank"
@@ -59,7 +59,7 @@ export const AboutUsComponent = () => {
             </p>
 
             <p className="text-third text-lg">
-              At Rich Style, we believe luxury travel is more than
+              At On Time, we believe luxury travel is more than
               transportation—it is a carefully curated experience. Our mission
               is to provide exceptional private aviation and lifestyle solutions
               with unmatched attention to detail, discretion, and personalized

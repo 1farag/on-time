@@ -117,7 +117,7 @@ export const LoyaltyUserComponent = () => {
                       </span>
                       <div>
                         <p className="!mb-1">Current balance</p>
-                        <h3>Rich Style Loyalty</h3>
+                        <h3>On Time Loyalty</h3>
                       </div>
                     </div>
                   </div>
@@ -163,7 +163,7 @@ export const LoyaltyUserComponent = () => {
                 <div>
                   <h2 className={style.sectionTitle}>How to earn points</h2>
                   <p className={style.sectionSubtitle}>
-                    Every interaction with Rich Style increases your balance
+                    Every interaction with On Time increases your balance
                   </p>
                 </div>
               </div>

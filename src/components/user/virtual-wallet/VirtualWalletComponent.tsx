@@ -91,7 +91,7 @@ export const VirtualWalletComponent = () => {
                   </span>
                   <div>
                     <p className={style.kicker}>Available balance</p>
-                    <h3 className="!m-0">Rich Style Credit</h3>
+                    <h3 className="!m-0">On Time Credit</h3>
                   </div>
                 </div>
                 {/* <div className={style.usablePill}>

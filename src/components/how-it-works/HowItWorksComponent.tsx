@@ -16,7 +16,7 @@ export const HowItWorksComponent: React.FC = () => {
     <main>
       <MainBanner backgroundImage="/images/bannerbg.png">
         <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight md:leading-relaxed mb-10">
-          Discover How <GradientText>Rich Style</GradientText>
+          Discover How <GradientText>On Time</GradientText>
           <br />
           Simplifies Private Travel
         </h1>

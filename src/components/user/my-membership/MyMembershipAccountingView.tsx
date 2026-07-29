@@ -246,7 +246,7 @@ export const MyMembershipAccountingView = () => {
                     </div>
                     <div>
                       <p className={style.heroKicker}>
-                        Rich Style Membership · {tier.code}
+                        On Time Membership · {tier.code}
                       </p>
                       <h2 className={style.heroTitle}>{safeTierName}</h2>
                     </div>

@@ -92,7 +92,7 @@ export const WalletComponent = () => {
                   </span>
                   <div>
                     <p className="!mb-1">Current balance</p>
-                    <h3>Rich Style Wallet</h3>
+                    <h3>On Time Wallet</h3>
                   </div>
                 </div>
                 <div className={style.statusPill}>

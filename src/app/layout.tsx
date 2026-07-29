@@ -21,11 +21,11 @@ const roboto = Roboto({
 export async function generateMetadata() {
   return {
     title: {
-      default: "Welcome to Rich Style",
-      template: "%s | Rich Style",
+      default: "Welcome to On Time",
+      template: "%s | On Time",
     },
     description:
-      "Rich Style is a leading provider of innovative solutions, offering a wide range of services to meet your needs. Our team of experts is dedicated to delivering exceptional results and ensuring customer satisfaction.",
+      "On Time is a leading provider of innovative solutions, offering a wide range of services to meet your needs. Our team of experts is dedicated to delivering exceptional results and ensuring customer satisfaction.",
     icons: {
       icon: "/images/fav-icon.svg",
     },

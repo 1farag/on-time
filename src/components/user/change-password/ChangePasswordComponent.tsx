@@ -46,7 +46,7 @@ export const ChangePasswordComponent = () => {
           </Suspense>
         </div>
       )}
-      <p className={style.footer}>All rights reserved.Rich Style . © 2026</p>
+      <p className={style.footer}>All rights reserved.On Time . © 2026</p>
     </main>
   );
 };

@@ -6,7 +6,7 @@ export const AllRightRecieved = () => {
   return (
     <div className="bg-[#081021] text-third  py-8 border-t-2 border-[#252B37]">
       <div className="container flex items-center justify-center">
-        <p>All rights reserved.Rich Style . ©{new Date().getFullYear()} </p>
+        <p>All rights reserved.On Time . ©{new Date().getFullYear()} </p>
       </div>
     </div>
   );

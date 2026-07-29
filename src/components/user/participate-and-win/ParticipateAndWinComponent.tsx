@@ -182,7 +182,7 @@ export const ParticipateAndWinComponent = () => {
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
         await navigator.share({
-          title: "Rich Style",
+          title: "On Time",
           url: referralLink,
         });
       } catch {

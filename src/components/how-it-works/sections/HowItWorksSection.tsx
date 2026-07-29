@@ -87,7 +87,7 @@ const steps: Step[] = [
     ),
     title: "Fly With Confidence",
     description:
-      "Arrive at your private terminal, skip the lines, and take off on your own schedule. Enjoy seamless travel backed by 24/7 Rich Style  support.",
+      "Arrive at your private terminal, skip the lines, and take off on your own schedule. Enjoy seamless travel backed by 24/7 On Time  support.",
   },
 ];
 
@@ -100,7 +100,7 @@ export const HowItWorksSection = () => {
           <h2 className="text-2xl md:text-5xl font-bold text-white leading-tight">
             Discover How Easy It Is to
             <br />
-            <GradientText>Book Private Flights with Rich Style</GradientText>
+            <GradientText>Book Private Flights with On Time</GradientText>
           </h2>
         </div>
 

@@ -181,7 +181,7 @@ export const SuccessfulyBookedSeatSharingComponent = () => {
             <GradientText>Your seat has been successfully booked.</GradientText>
           </h1>
           <p className="text-third text-lg">
-            Thank you for choosing Rich Style . Have a pleasant flight!
+            Thank you for choosing On Time . Have a pleasant flight!
           </p>
         </div>
 

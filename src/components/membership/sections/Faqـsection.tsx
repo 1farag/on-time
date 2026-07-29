@@ -12,30 +12,30 @@ type FaqItem = {
 
 const faqs: FaqItem[] = [
   {
-    question: "What is Rich Style?",
+    question: "What is On Time?",
     answer:
-      "Rich Style is a premium luxury concierge and lifestyle management platform that provides access to carefully arranged luxury experiences through trusted third-party providers.\n\nServices may include:\n• Private Aviation\n• Luxury Chauffeur Services\n• Luxury Hotel Reservations\n• Private Yacht Experiences\n• Fine Dining Experiences\n• VIP Concierge Services\n• Lifestyle Management Solutions",
+      "On Time is a premium luxury concierge and lifestyle management platform that provides access to carefully arranged luxury experiences through trusted third-party providers.\n\nServices may include:\n• Private Aviation\n• Luxury Chauffeur Services\n• Luxury Hotel Reservations\n• Private Yacht Experiences\n• Fine Dining Experiences\n• VIP Concierge Services\n• Lifestyle Management Solutions",
   },
   {
     question:
-      "Does Rich Style own the aircraft, vehicles, hotels, yachts, or restaurants?",
+      "Does On Time own the aircraft, vehicles, hotels, yachts, or restaurants?",
     answer:
-      "No. Rich Style acts as a luxury booking, concierge, and lifestyle management platform. Services are fulfilled through independent licensed and qualified third-party providers.",
+      "No. On Time acts as a luxury booking, concierge, and lifestyle management platform. Services are fulfilled through independent licensed and qualified third-party providers.",
   },
   {
-    question: "Where does Rich Style operate?",
+    question: "Where does On Time operate?",
     answer:
-      "Rich Style primarily serves clients throughout:\n• Kingdom of Saudi Arabia\n• Gulf Cooperation Council (GCC) Countries\n• Middle East\n• Europe\n• North America\n• Asia\n• Other international destinations subject to availability",
+      "On Time primarily serves clients throughout:\n• Kingdom of Saudi Arabia\n• Gulf Cooperation Council (GCC) Countries\n• Middle East\n• Europe\n• North America\n• Asia\n• Other international destinations subject to availability",
   },
   {
-    question: "Who can use Rich Style?",
+    question: "Who can use On Time?",
     answer:
-      "Rich Style is available to:\n• Individuals\n• Families\n• Business Executives\n• Corporate Clients\n• Family Offices\n• VIP Travelers\n• High-Net-Worth Individuals\n\nClients must be at least 18 years old.",
+      "On Time is available to:\n• Individuals\n• Families\n• Business Executives\n• Corporate Clients\n• Family Offices\n• VIP Travelers\n• High-Net-Worth Individuals\n\nClients must be at least 18 years old.",
   },
   {
-    question: "How do I contact Rich Style?",
+    question: "How do I contact On Time?",
     answer:
-      "Clients may contact Rich Style through:\n• Website\n• Mobile Application\n• Customer Support\n• Dedicated Concierge Team\n• Membership Services Team",
+      "Clients may contact On Time through:\n• Website\n• Mobile Application\n• Customer Support\n• Dedicated Concierge Team\n• Membership Services Team",
   },
   {
     question: "What are Credits?",

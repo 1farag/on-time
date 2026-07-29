@@ -6,7 +6,7 @@ import { Suspense } from "react";
 export const metadata: Metadata = {
   title: "Private Jet",
   description:
-    "Private jet charter by Rich Style  — contact our team via Contact us for tailored charter requests, or explore seat sharing.",
+    "Private jet charter by On Time  — contact our team via Contact us for tailored charter requests, or explore seat sharing.",
 };
 
 const PrivateJetPage = (): JSX.Element => {
