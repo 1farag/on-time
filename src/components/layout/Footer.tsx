@@ -45,6 +45,7 @@ export const Footer = () => {
       style={{
         backgroundImage: "url('/images/footer-bg.png')",
       }}
+      id="contact"
     >
       <div className="container relative z-10">
         {/* CTA */}
