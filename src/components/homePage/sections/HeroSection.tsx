@@ -16,11 +16,11 @@ export const HeroSection = () => {
       id="hero"
     >
       <div className="container relative z-10">
-        <Row gutter={[32, 32]} align="middle" justify="space-between">
+        <Row gutter={[32, 32]} align="bottom">
           <Col xs={24} md={12}>
             <div className="flex flex-col items-start gap-8">
               {/* Top Text */}
-              <div className="flex items-center gap-4  md:mb-[247px]">
+              <div className="flex items-center gap-4  md:mb-[230px]">
                 <span className="w-12 h-px bg-primary" />
                 <p className="text-primary uppercase tracking-[0.35em] text-xs">
                   Luxury Development • Trusted Management
@@ -47,7 +47,7 @@ export const HeroSection = () => {
           <Col xs={24} md={12}>
             <div>
               <Image
-                src={"/images/logo.svg"}
+                src={"/images/hero-main-image.png"}
                 width={495}
                 height={368}
                 objectFit="cover"
