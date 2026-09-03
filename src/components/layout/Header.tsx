@@ -93,12 +93,7 @@ export const Header = () => {
       <div className="header_inner container relative">
         <div className="min-w-[90px]">
           <Link href={"/"}>
-            <Image
-              src="/images/logo.svg"
-              alt="Wadeny Sky Logo"
-              width={197}
-              height={92}
-            />
+            <Image src="/images/logo.svg" alt=" Logo" width={197} height={92} />
           </Link>
         </div>
 
