@@ -86,7 +86,9 @@ export const Header = () => {
   return (
     <header
       className={`header fixed top-0 z-20 py-1 transition-all duration-300 ease-in-out lg:px-4 h-[110px] flex ${
-        scrolled ? "bg-transparent" : "bg-transparent"
+        scrolled
+          ? "bg-secondary/80 backdrop-blur-md shadow-lg shadow-black/20"
+          : "bg-transparent"
       }`}
       id={navlinks[0].name}
     >
@@ -217,7 +219,6 @@ export const Header = () => {
                   return (
                     <motion.div
                       key={i}
-                      // variants={navLists}
                       initial="hidden"
                       animate="visible"
                       exit="exit"
@@ -286,7 +287,6 @@ export const Header = () => {
                 return (
                   <motion.div
                     key={i}
-                    // variants={navLists}
                     initial="hidden"
                     animate="visible"
                     exit="exit"

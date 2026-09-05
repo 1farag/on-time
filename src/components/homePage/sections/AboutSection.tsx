@@ -23,7 +23,7 @@ export const AboutSection = () => {
               <h2 className="text-primary text-5xl font-bold mb-4">About Us</h2>
 
               <p className="text-white text-2xl leading-relaxed max-w-sm">
-                Where technology meets creative vision.
+                Where Business, Technology & Opportunity Move Together.
               </p>
             </FadeIn>
           </Col>
@@ -32,26 +32,38 @@ export const AboutSection = () => {
             <div className="flex flex-col gap-8">
               <FadeIn delay={0.1}>
                 <p className="text-white/90 text-xl leading-[2]">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since 1966, when designers at Letraset and James
-                  Mosley,
+                  <span className="font-bold">On Time Group</span> is a Saudi
+                  business group that develops, operates, and invests in
+                  ventures across diverse sectors, connecting traditional
+                  business with technology, innovation, and modern operational
+                  thinking.
                 </p>
               </FadeIn>
 
               <FadeIn delay={0.22}>
                 <p className="text-primary text-xl leading-[2]">
-                  the librarian at St Bride Printing Library, took a 1914 Cicero
-                  translation and scrambled it to make dummy text for
-                  Letraset&apos;s Body Type sheets. It has survived not only many
-                  decades, but also the leap into electronic typesetting,
-                  remaining essentially unchanged.
+                  Inspired by the Kingdom’s transformation and Saudi Vision
+                  2030, we turn promising opportunities into scalable businesses
+                  through smart strategies, strong partnerships, and effective
+                  execution.
+                  <br />
+                  We believe success is not only about the right idea — it is
+                  about acting at the right moment.
+                  <br />
+                  <span className="font-bold">
+                    The right time to innovate. The right time to build. The
+                    right time to succeed. It’s On Time.
+                  </span>
                 </p>
               </FadeIn>
 
               <div className="flex flex-wrap gap-x-12 gap-y-6 pt-6">
                 {features.map((title, index) => (
-                  <Feature key={title} title={title} delay={0.32 + index * 0.12} />
+                  <Feature
+                    key={title}
+                    title={title}
+                    delay={0.32 + index * 0.12}
+                  />
                 ))}
               </div>
             </div>

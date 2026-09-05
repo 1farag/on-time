@@ -8,21 +8,21 @@ import { easeOutExpo, FadeIn } from "../motion";
 const services = [
   {
     id: "01",
-    title: "Software Development.",
+    title: "Venture Development",
     description:
-      "Creating innovative web, mobile, and cloud-based solutions from concept to launch.",
+      "We identify opportunities and transform innovative ideas into scalable, market-ready ventures through strategy, technology, and strong partnerships.",
   },
   {
     id: "02",
-    title: "Software Development.",
+    title: "Business Operations",
     description:
-      "Creating innovative web, mobile, and cloud-based solutions from concept to launch.",
+      "We build and operate businesses with efficient models, smart technologies, and customer-focused solutions designed for sustainable growth.",
   },
   {
     id: "03",
-    title: "Software Development.",
+    title: "Partnerships",
     description:
-      "Creating innovative web, mobile, and cloud-based solutions from concept to launch.",
+      "We go to promising opportunities & create strategic partnerships that combine capital, expertise, technology, and market access.",
   },
 ];
 
@@ -44,7 +44,7 @@ export const ServicesSection = () => {
               </h2>
 
               <p className="text-white text-2xl leading-relaxed max-w-md">
-                Strategic foundations driving our vision forward.
+                We Build. We Operate. We Grow.{" "}
               </p>
             </FadeIn>
           </Col>
@@ -52,8 +52,9 @@ export const ServicesSection = () => {
           <Col xs={24} lg={14}>
             <FadeIn delay={0.15}>
               <p className="text-white text-3xl leading-[1.7] max-w-4xl">
-                We combine creativity, technology, and strategic thinking to build
-                digital solutions that empower brands and create lasting impact.
+                From opportunity to execution,{" "}
+                <span className="font-bold">On Time Group</span> creates,
+                operates, and scales businesses built for the future.
               </p>
             </FadeIn>
           </Col>

@@ -4,6 +4,7 @@ import { Button, Col, Row } from "antd";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Typewriter from "typewriter-effect";
 import { easeOutExpo, fadeUp, stagger } from "../motion";
 
 export const HeroSection = () => {
@@ -24,7 +25,7 @@ export const HeroSection = () => {
 
       <div className="container relative z-10">
         <Row gutter={[32, 32]} align="bottom">
-          <Col xs={24} md={12}>
+          <Col xs={24} md={13}>
             <motion.div
               className="flex flex-col items-start gap-8"
               variants={stagger}
@@ -32,7 +33,7 @@ export const HeroSection = () => {
               animate="visible"
             >
               <motion.div
-                className="flex items-center gap-4 md:mb-[230px]"
+                className="flex items-center gap-4"
                 variants={fadeUp}
                 transition={{ duration: 0.8, ease: easeOutExpo }}
               >
@@ -45,6 +46,35 @@ export const HeroSection = () => {
                 <p className="text-primary uppercase tracking-[0.35em] text-xs">
                   Luxury Development • Trusted Management
                 </p>
+              </motion.div>
+
+              <motion.div
+                variants={fadeUp}
+                transition={{ duration: 0.8, ease: easeOutExpo }}
+                dir="ltr"
+                className="text-5xl md:text-6xl font-bold leading-tight min-h-[200px] md:min-h-[220px]"
+              >
+                <Typewriter
+                  options={{
+                    loop: true,
+                    delay: 70,
+                    deleteSpeed: 40,
+                    cursor: "|",
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString(
+                        '<span class="block text-white mb-6 mt-4">Transforming Ideas Into</span>'
+                      )
+                      .typeString(
+                        '<span class="block text-primary">Digital Reality.</span>'
+                      )
+                      .pauseFor(1800)
+                      .deleteAll(40)
+                      .pauseFor(500)
+                      .start();
+                  }}
+                />
               </motion.div>
 
               <motion.p
@@ -61,7 +91,10 @@ export const HeroSection = () => {
                 variants={fadeUp}
                 transition={{ duration: 0.8, ease: easeOutExpo }}
               >
-                <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.98 }}>
+                <motion.div
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.98 }}
+                >
                   <Button
                     type="primary"
                     className="!rounded-full !h-14 !px-10"
@@ -73,7 +106,7 @@ export const HeroSection = () => {
               </motion.div>
             </motion.div>
           </Col>
-          <Col xs={24} md={12}>
+          <Col xs={24} md={11}>
             <motion.div
               initial={{ opacity: 0, x: 56, scale: 0.96 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
