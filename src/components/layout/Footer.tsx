@@ -18,22 +18,17 @@ export const Footer = () => {
 
   const socialLinks = [
     {
-      href: "https://instagram.com",
+      href: "https://www.instagram.com/ontime_groups/",
       icon: <FaInstagram size={14} />,
       label: "Instagram",
     },
     {
-      href: "https://linkedin.com",
-      icon: <BiLogoLinkedin size={15} />,
-      label: "LinkedIn",
-    },
-    {
-      href: "https://x.com/tai1381ES",
+      href: "https://x.com/ontime_groups",
       icon: <FaXTwitter size={13} />,
       label: "X",
     },
     {
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/profile.php?id=61556352401874&is_tour_completed=true",
       icon: <FiFacebook size={14} />,
       label: "Facebook",
     },
@@ -91,6 +86,7 @@ export const Footer = () => {
                   <a
                     key={item.label}
                     href={item.href}
+                    target="_blank"
                     className="w-11 h-11 rounded-full border !text-primary border-white/10 flex items-center justify-center hover:border-primary transition"
                   >
                     {item.icon}
