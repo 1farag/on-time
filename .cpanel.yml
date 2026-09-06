@@ -1,4 +1,4 @@
 ---
 deployment:
   tasks:
-    - /bin/bash -lc 'command -v node > /home/ontimegrpup/deployment-runtime.txt 2>&1; node --version >> /home/ontimegrpup/deployment-runtime.txt 2>&1; command -v npm >> /home/ontimegrpup/deployment-runtime.txt 2>&1; npm --version >> /home/ontimegrpup/deployment-runtime.txt 2>&1'
+    - /bin/bash -lc 'for p in /opt/cpanel/ea-nodejs*/bin/node; do if test -x "$p"; then printf "%s " "$p"; "$p" --version; fi; done > /home/ontimegrpup/deployment-runtime.txt 2>&1'
