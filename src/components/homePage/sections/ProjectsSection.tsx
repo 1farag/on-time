@@ -19,7 +19,7 @@ export const ProjectsSection = () => {
       }}
       id="projects"
     >
-      <div className="container relative z-10 w-full  py-12 md:py-28">
+      <div className="container relative z-10 w-full  py-16 md:py-28">
         <FadeIn className="mb-16 md:mb-24">
           <h2 className="mb-5 text-5xl font-bold text-primary">Our Projects</h2>
 

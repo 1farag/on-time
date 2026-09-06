@@ -98,7 +98,7 @@ export const HeroSection = () => {
                   <Button
                     type="primary"
                     className="!rounded-full !h-14 !px-10"
-                    onClick={() => router.push("/projects")}
+                    onClick={() => router.push("#projects")}
                   >
                     Explore Projects
                   </Button>
