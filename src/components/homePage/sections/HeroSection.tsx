@@ -12,7 +12,7 @@ export const HeroSection = () => {
 
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative min-h-screen mb-10 md:mb-0 flex items-center overflow-hidden mt-[135px] md:mt-0"
       id="hero"
     >
       <motion.div

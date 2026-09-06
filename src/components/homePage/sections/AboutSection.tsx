@@ -10,7 +10,7 @@ const features = ["Deep Insights", "Creative Strategy", "Seamless Execution"];
 export const AboutSection = () => {
   return (
     <section
-      className="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+      className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
       style={{
         backgroundImage: "url('/images/about-bg.png')",
       }}
