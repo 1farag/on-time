@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - /bin/bash -lc 'command -v node > /home/ontimegrpup/deployment-runtime.txt 2>&1; node --version >> /home/ontimegrpup/deployment-runtime.txt 2>&1; command -v npm >> /home/ontimegrpup/deployment-runtime.txt 2>&1; npm --version >> /home/ontimegrpup/deployment-runtime.txt 2>&1'
