@@ -27,10 +27,16 @@ export const Footer = () => {
       icon: <FaXTwitter size={13} />,
       label: "X",
     },
+
     {
       href: "https://www.facebook.com/profile.php?id=61556352401874&is_tour_completed=true",
       icon: <FiFacebook size={14} />,
       label: "Facebook",
+    },
+    {
+      href: "https://www.linkedin.com/company/ontime-holding/",
+      icon: <BiLogoLinkedin size={13} />,
+      label: "LinkedIn",
     },
   ];
 
