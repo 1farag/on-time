@@ -13,6 +13,7 @@
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "@ckeditor/ckeditor5-line-height": "^0.0.1",
     "@ckeditor/ckeditor5-react": "^9.5.0",
+    "@emailjs/browser": "^4.4.1",
     "@react-oauth/google": "^0.13.4",
     "@reduxjs/toolkit": "^2.5.1",
     "@studio-freight/lenis": "^1.0.42",
