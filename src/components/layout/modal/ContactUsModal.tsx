@@ -172,6 +172,12 @@ export const ContactModal = ({ open, onClose }: Props) => {
                     <span className="text-[#9CA3AF]">Notes ( Optional )</span>
                   }
                   name="notes"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Enter your notes",
+                    },
+                  ]}
                 >
                   <TextArea rows={5} placeholder="Any special requests" />
                 </Form.Item>
