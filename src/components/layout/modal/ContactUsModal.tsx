@@ -168,9 +168,7 @@ export const ContactModal = ({ open, onClose }: Props) => {
             <Col span={24}>
               <div className="inputS1">
                 <Form.Item
-                  label={
-                    <span className="text-[#9CA3AF]">Notes ( Optional )</span>
-                  }
+                  label={<span className="text-[#9CA3AF]">Notes</span>}
                   name="notes"
                   rules={[
                     {
